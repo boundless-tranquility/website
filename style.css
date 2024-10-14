@@ -20,6 +20,14 @@ body {
 }
 
 /* Navigation Bar */
+nav .logo img {
+    width: 100%;
+    max-width: 400px; /* Maximum width on larger screens */
+    height: auto;
+    display: block;
+}
+
+/* Navigation Bar */
 nav {
     background-color: #002244;
     padding: 1rem 0;
@@ -29,14 +37,6 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav .logo img {
-    height: 50px; /* Adjust the height to fit your design */
-    width: auto;
-    max-height: 100%;
-    max-width: 400px;
-    display: block; /* Removes any extra space below the image */
 }
 
 nav .nav-links {
@@ -71,6 +71,10 @@ nav .nav-links a {
     nav .nav-links li {
         margin-left: 0;
         margin-bottom: 1rem;
+    }
+
+    nav .logo img {
+        max-width: 200px; /* Adjust width for small screens */
     }
 }
 
