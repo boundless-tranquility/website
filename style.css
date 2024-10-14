@@ -334,6 +334,38 @@ nav .nav-links a {
     background-color: #001122;
 }
 
+/* Thank You Section */
+.thank-you {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.thank-you h2 {
+    font-size: 2.5rem;
+    color: #002244;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.thank-you .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #002244;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.thank-you .cta-button:hover {
+    background-color: #001122;
+}
+
 /* Footer */
 footer {
     background-color: #002244;
