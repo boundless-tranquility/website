@@ -433,7 +433,16 @@ nav .nav-links {
     min-height: 150px;
 }
 
-/* Contact Section Styles */
+/* Contact form - message box and button styling */
+.contact form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem; /* Add space below the message box */
+}
 
 /* Submit Button */
 .contact form button {
@@ -444,8 +453,14 @@ nav .nav-links {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 1.5rem; /* Adjust spacing here */
+    margin-top: 1.5rem; /* Add space above the button */
 }
+
+.contact form button:hover {
+    background-color: #001122;
+}
+
+/* Contact Section Styles */
 
 .contact form button:hover {
     background-color: #001122;
