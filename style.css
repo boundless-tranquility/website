@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Scroll padding for sections to prevent content from being hidden by the navbar */
+html {
+    scroll-padding-top: 70px; /* Adjust this value based on your navbar height */
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -38,6 +43,42 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+/* Language Toggle Button Styling */
+#language-toggle {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+#language-toggle:hover {
+    background-color: #00aaff;
+    color: #fff;
+    border-color: #00aaff;
+}
+
+/* Mobile adjustments - Hide or move the button below the hamburger */
+@media (max-width: 768px) {
+    #language-toggle {
+        position: absolute;
+        top: 1rem;
+        right: 4rem; /* Move the button away from the hamburger */
+        font-size: 0.9rem;
+    }
+
+    /* Option to hide the button entirely on mobile */
+    /* #language-toggle {
+        display: none; 
+    } */
+}
+
 
 nav .container {
     display: flex;
