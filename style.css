@@ -219,24 +219,38 @@ nav .nav-links {
     text-align: center;
 }
 
+/* Hero Section Tagline Styling */
 .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem; /* Reduced from 1rem */
-    font-weight: 700;
+    font-size: 3rem; /* Emphasize the tagline */
+    color: #ffffff; /* Make the text stand out */
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem; /* Slight spacing for elegance */
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    opacity: 0; /* Start with hidden text */
+    animation: fadeIn 3s ease-in-out forwards; /* Smooth fade-in effect */
 }
 
-.hero-text .tagline {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    color: #f1f1f1; /* Slightly darker */
+/* Fade-in Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+/* Optional: Fade-in for the paragraph under the tagline */
 .hero-text .mission {
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #dddddd; /* Darker gray for better readability */
-    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 1rem;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 4s ease-in-out forwards; /* Slight delay for softer appearance */
+    animation-delay: 0.5s; /* Delayed start to stagger the fade-in */
 }
 
 /* Responsive Adjustments */
