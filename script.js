@@ -29,3 +29,31 @@ navLinksItems.forEach(link => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the user is on the root or index page
+    const isOnIndexPage = window.location.pathname === '/' || window.location.pathname.includes('index.html');
+    const isOnChinesePage = window.location.pathname.includes('index-zh.html');
+
+    if (isOnIndexPage || isOnChinesePage) {
+        // Check if a language preference is stored in localStorage
+        const userLangPreference = localStorage.getItem('site-lang');
+
+        if (userLangPreference) {
+            // If a manual preference exists, redirect to the proper page based on that preference
+            if (userLangPreference === 'zh' && !isOnChinesePage) {
+                window.location.href = "index-zh.html"; // Redirect to Chinese version
+            } else if (userLangPreference === 'en' && isOnChinesePage) {
+                window.location.href = "index.html"; // Redirect to English version
+            }
+        } else {
+            // If no preference is stored, use browser language for first-time visitors
+            const userLang = navigator.language || navigator.userLanguage;
+
+            if (userLang.includes('zh') && !isOnChinesePage) {
+                window.location.href = "index-zh.html"; // Redirect to Chinese version
+            }
+            // No need to store any preference in localStorage at this point
+        }
+    }
+});
