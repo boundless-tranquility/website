@@ -1,5 +1,8 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
+# Run the year update script
 npm run update-readme-year
-npm run test:all 
+
+# Run all tests
+npm run test:all
+
+# Note: Year updates are automatically committed and pushed
+# The update-readme-year script handles the git operations 
