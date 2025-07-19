@@ -150,6 +150,25 @@ The project includes automated testing that runs on every push and pull request:
 
 Tests automatically run before pushing to GitHub via Husky pre-push hooks.
 
+### GitHub Actions Workflows
+
+The project uses two automated workflows:
+
+#### 1. **Test Website** (`test.yml`)
+- **Triggers**: Every push and pull request
+- **Purpose**: Quality assurance and testing
+- **Steps**:
+  - ✅ Linting (ESLint)
+  - ✅ Unit tests (49 tests)
+  - ✅ Security audit
+  - ✅ File verification
+
+#### 2. **Deploy to Pages** (`pages.yml`)
+- **Triggers**: Only after successful test workflow
+- **Purpose**: Automatic deployment to GitHub Pages
+- **Condition**: Only runs if `Test Website` workflow passes
+- **Result**: Live website at `https://boundless-tranquility.github.io/website`
+
 ### Testing Strategy
 
 The project uses a **simplified and reliable testing approach**:
@@ -177,7 +196,14 @@ The GitHub Actions workflow automatically:
 1. Runs linting and code quality checks
 2. Executes all unit tests (49 tests)
 3. Performs security audit with npm audit
-4. Ensures all tests pass before allowing deployment
+4. Verifies static site files are present
+5. **Only deploys to GitHub Pages if ALL tests pass**
+
+**Deployment Flow:**
+```
+Push → Test Website Workflow → ✅ Pass → Deploy to GitHub Pages
+Push → Test Website Workflow → ❌ Fail → No Deployment
+```
 
 ## RSS Feed Configuration
 
