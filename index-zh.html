@@ -36,11 +36,12 @@
                 <li><a href="#home">主页</a></li>
                 <!-- <li><a href="#performance">业绩表现</a></li> -->
                 <li><a href="#philosophy">投资理念</a></li>
+                <li><a href="#blog">市场洞察</a></li>
                 <li><a href="#about">关于我们</a></li>
                 <li><a href="#disclosure">信息披露</a></li>
                 <!-- <li><a href="#contact">联系我们</a></li> -->
             </ul>
-            <button id="language-toggle">English</button>
+            <button id="language-toggle" type="button">English</button>
         </div>
     </nav>
 
@@ -79,6 +80,25 @@
         <div class="container">
             <h2>我们的投资理念</h2>
             <p>我们的量化基金旨在通过采用专有算法的全自动量化交易系统实现资本增值并最大化绝对收益。通过利用衍生品市场（特别是期权）的机会，我们从价格变动和市场低效中获利。我们保持跟踪市场指数的基本头寸，并战略性地使用衍生品来对冲或放大这些头寸。我们强调严格的风险管理，在交易时间内积极监控头寸风险水平，采用多层风险预防机制（包括强制清算触发机制），并谨慎地选择新头寸以最大限度地降低风险回报率。我们的系统以最少的人工干预运行，确保对市场状况做出一致且及时的响应。</p>
+        </div>
+    </section>
+
+    <!-- Market Insights Blog Section -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <h2>市场洞察</h2>
+            <p class="blog-intro">及时了解我们最新的市场观察和分析。我们的团队分享有关市场趋势、交易策略和塑造金融格局的经济发展的见解。</p>
+            
+            <div class="blog-posts">
+                <!-- Blog posts will be loaded dynamically from RSS feed -->
+            </div>
+
+            <div class="blog-cta">
+                <p>如需更详细的市场分析和见解，请访问我们的综合博客：</p>
+                <a href="https://marketdecoding.blogspot.com/" target="_blank" rel="noopener noreferrer" class="blog-cta-btn">
+                    访问市场解码博客
+                </a>
+            </div>
         </div>
     </section>
 
@@ -171,12 +191,13 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Boundless Tranquility Capital Limited。保留所有权利。</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Boundless Tranquility Capital Limited。保留所有权利。</p>
         </div>
     </footer>
 
     <!-- Link to external JavaScript file -->
     <script src="/script.js"></script>
     <script src="/language-toggle.js"></script>
+    <script src="/rss-feed-zh.js"></script>
 </body>
 </html>

@@ -37,12 +37,13 @@
                 <li><a href="#home">Home</a></li>
                 <!-- <li><a href="#performance">Performance</a></li> -->
                 <li><a href="#philosophy">Investment Philosophy</a></li>
+                <li><a href="#blog">Market Insights</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#disclosure">Disclosure</a></li>
                 <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
             <!-- Language Toggle Button -->
-            <button id="language-toggle">中文</button>
+            <button id="language-toggle" type="button">中文</button>
         </div>
     </nav>
 
@@ -81,6 +82,25 @@
         <div class="container">
             <h2>Our Investment Philosophy</h2>
             <p>Our quant fund aims to achieve capital appreciation and maximize absolute returns through a fully automated, quantitative trading system that utilizes proprietary algorithms. By capitalizing on opportunities in derivatives markets—specifically options—we profit from price movements and market inefficiencies. We maintain base positions that track market indices and strategically use derivatives to hedge or amplify these positions. Emphasizing disciplined risk management, we actively monitor position risk levels during trading hours, employ multiple layers of risk prevention mechanisms—including force liquidation triggers—and conservatively select new positions to minimize the risk-to-reward ratio. Operating with minimal manual intervention, our system ensures consistent and timely responses to market conditions.</p>
+        </div>
+    </section>
+
+    <!-- Market Insights Blog Section -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <h2>Market Insights</h2>
+            <p class="blog-intro">Stay informed with our latest market observations and analysis. Our team shares insights on market trends, trading strategies, and economic developments that shape the financial landscape.</p>
+            
+            <div class="blog-posts">
+                <!-- Blog posts will be loaded dynamically from RSS feed -->
+            </div>
+
+            <div class="blog-cta">
+                <p>For more detailed market analysis and insights, visit our comprehensive blog:</p>
+                <a href="https://marketdecoding.blogspot.com/" target="_blank" rel="noopener noreferrer" class="blog-cta-btn">
+                    Visit Market Decoding Blog
+                </a>
+            </div>
         </div>
     </section>
 
@@ -173,12 +193,13 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Boundless Tranquility Capital Limited. All rights reserved.</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Boundless Tranquility Capital Limited. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Link to external JavaScript file -->
     <script src="/script.js"></script>
     <script src="/language-toggle.js"></script>
+    <script src="/rss-feed.js"></script>
 </body>
 </html>
