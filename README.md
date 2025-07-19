@@ -252,7 +252,7 @@ The website automatically fetches blog posts from:
 
 ## License
 
-© 2025 Boundless Tranquility Capital Limited. All rights reserved.
+© 2024 Boundless Tranquility Capital Limited. All rights reserved.
 
 ## Support
 
