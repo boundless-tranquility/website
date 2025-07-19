@@ -1,1 +1,3 @@
 npm run lint && npm test
+# Run the year update script
+npm run update-readme-year
